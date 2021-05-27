@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe index</title>
+</head>
+<body>
+    <h1>Recipe Index</h1>
+    <nav>
+        <a href="/recipe/new">Create a new Recipe</a>
+    </nav>
+    <div class="container">
+        <% for (let i = 0; i < recipe.length; i++) { %>
+            <a href="/recipe/<%= i %>"><img src="<%= recipe[i].img %>" alt=""></a>
+        <% } %>
+    </div>
+    
+    
+</body>
+</html>
