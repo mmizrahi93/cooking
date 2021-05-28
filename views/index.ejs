@@ -13,7 +13,7 @@
     </nav>
     <div class="container">
         <% for (let i = 0; i < recipe.length; i++) { %>
-            <a href="/recipe/<%= i %>"><img src="<%= recipe[i].img %>" alt=""></a>
+            <a href="/recipe/<%= recipe[i].id %>"><img src="<%= recipe[i].img %>" alt=""></a>
         <% } %>
     </div>
     
