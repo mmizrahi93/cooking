@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Recipe</h1>
+    <nav>
+        <a href="/recipe">Back to Recipe Posts</a>
+    </nav>
+    <form action="/recipe/<%= recipe.id %>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%=recipe.name%>">
+        <br>
+        <label for="inspiration">Inspiration:</label>
+        <input type="text" name="inspiration" value="<%=recipe.inspiration%>">
+        <br>
+        <label for="img">Img:</label>
+        <input type="text" name="img" value="<%=recipe.img%>">
+        <br>
+        <label for="ingredients">Ingredients:</label>
+        <input type="text" name="ingredients" value="<%=recipe.ingredients%>">
+        <br>
+        <label for="cooking">Cooking:</label>
+        <input type="text" name="cooking" value="<%=recipe.cooking%>">
+        <br>
+        <input type="submit" value="Edit Recipe"/>
+    </form>
+    
+</body>
+</html>

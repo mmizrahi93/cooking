@@ -55,6 +55,29 @@ app.get(`/recipe/:id`, (req, res) => {
     })
 });
 
+// delete
+app.delete(`/recipe/:id`, (req, res) => {
+    Recipe.findByIdAndRemove(req.params.id, (error, deletedRecipe)=>{
+        res.redirect('/recipe');
+    });
+})
+
+// EDIT SHOW
+app.get(`/recipe/:id/edit`, (req, res) => {
+    Recipe.findById(req.params.id, (error, foundRecipe) => {
+        res.render('edit.ejs', {
+            recipe: foundRecipe
+        })
+  })
+});
+
+// edit 
+app.put('/recipe/:id', (req, res) => {
+    Recipe.findByIdAndUpdate(req.params.id, req.body, {new: true}, (error, updatedModel) => {
+        res.redirect('/recipe/');
+    });
+});
+
 // listening
 app.listen(PORT, () =>{
     console.log('listening on port ' + PORT);
