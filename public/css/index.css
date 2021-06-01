@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(241, 149, 149);
+    text-align: center;
+}
+
+img {
+    height: 600px;
+    width: 600px;
+    box-shadow: black 8px 0px 8px;
+}
