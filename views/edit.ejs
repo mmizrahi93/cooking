@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/new.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,10 +23,10 @@
         <input type="text" name="img" value="<%=recipe.img%>">
         <br>
         <label for="ingredients">Ingredients:</label>
-        <input type="text" name="ingredients" value="<%=recipe.ingredients%>">
+        <textarea name="instructions" cols="50" rows="5"><%=recipe.ingredients%></textarea>
         <br>
-        <label for="cooking">Cooking:</label>
-        <input type="text" name="cooking" value="<%=recipe.cooking%>">
+        <label for="cooking">How to Make:</label>
+        <textarea name="cooking" cols="50" rows="5"><%=recipe.cooking%></textarea>
         <br>
         <input type="submit" value="Edit Recipe"/>
     </form>
