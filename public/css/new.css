@@ -3,11 +3,53 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
 }
 
 .container {
     margin: 20px;
     background-color: rgb(245, 166, 245);
+    width: 500px;
     display: flex;
     flex-direction: column;
+}
+.container-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input, textarea {
+    width: 450px;
+}
+
+.submit {
+    width: 100px;
+}
+
+.submit:hover {
+    background: rgb(3, 3, 156);
+    box-shadow: black 8px 0px 8px;
+    border-radius: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: rgb(3, 3, 156);
+    box-shadow: black 8px 0px 8px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
 }

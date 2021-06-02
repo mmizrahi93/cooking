@@ -12,6 +12,7 @@
     <nav>
         <button><a href="/recipe">Back to Recipe Posts</a></button>
     </nav>
+    <div class="container-wrapper">
     <div class="container">
         <form action="/recipe/<%= recipe.id %>?_method=PUT" method="POST">
             <label for="name">Name:</label>
@@ -34,8 +35,9 @@
             <br>
             <textarea name="cooking" cols="50" rows="5"><%=recipe.cooking%></textarea>
             <br>
-            <input type="submit" value="Edit Recipe"/>
+            <input class="submit" type="submit" value="Edit Recipe"/>
         </form>
+    </div>
     </div>  
     
 </body>
