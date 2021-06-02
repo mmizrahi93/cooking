@@ -10,23 +10,28 @@
 <body>
     <h1>Edit Recipe</h1>
     <nav>
-        <a href="/recipe">Back to Recipe Posts</a>
+        <button><a href="/recipe">Back to Recipe Posts</a></button>
     </nav>
     <div class="container">
         <form action="/recipe/<%= recipe.id %>?_method=PUT" method="POST">
             <label for="name">Name:</label>
+            <br>
             <input type="text" name="name" value="<%=recipe.name%>">
             <br>
             <label for="inspiration">Inspiration:</label>
+            <br>
             <input type="text" name="inspiration" value="<%=recipe.inspiration%>">
             <br>
             <label for="img">Img:</label>
+            <br>
             <input type="text" name="img" value="<%=recipe.img%>">
             <br>
             <label for="ingredients">Ingredients:</label>
+            <br>
             <textarea name="instructions" cols="50" rows="5"><%=recipe.ingredients%></textarea>
             <br>
             <label for="cooking">How to Make:</label>
+            <br>
             <textarea name="cooking" cols="50" rows="5"><%=recipe.cooking%></textarea>
             <br>
             <input type="submit" value="Edit Recipe"/>
