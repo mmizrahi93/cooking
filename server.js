@@ -23,6 +23,9 @@ mongoose.connection.once('open', ()=> {
 const recipeController = require('./controllers/recipe.js');
 app.use('/recipe', recipeController);
 
+app.get('/', (req, res) => {
+    res.redirect('/recipe')
+})
 
 // listening
 app.listen(PORT, () =>{
