@@ -12,24 +12,26 @@
     <nav>
         <a href="/recipe">Back to Recipe Posts</a>
     </nav>
-    <form action="/recipe/<%= recipe.id %>?_method=PUT" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" name="name" value="<%=recipe.name%>">
-        <br>
-        <label for="inspiration">Inspiration:</label>
-        <input type="text" name="inspiration" value="<%=recipe.inspiration%>">
-        <br>
-        <label for="img">Img:</label>
-        <input type="text" name="img" value="<%=recipe.img%>">
-        <br>
-        <label for="ingredients">Ingredients:</label>
-        <textarea name="instructions" cols="50" rows="5"><%=recipe.ingredients%></textarea>
-        <br>
-        <label for="cooking">How to Make:</label>
-        <textarea name="cooking" cols="50" rows="5"><%=recipe.cooking%></textarea>
-        <br>
-        <input type="submit" value="Edit Recipe"/>
-    </form>
+    <div class="container">
+        <form action="/recipe/<%= recipe.id %>?_method=PUT" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="<%=recipe.name%>">
+            <br>
+            <label for="inspiration">Inspiration:</label>
+            <input type="text" name="inspiration" value="<%=recipe.inspiration%>">
+            <br>
+            <label for="img">Img:</label>
+            <input type="text" name="img" value="<%=recipe.img%>">
+            <br>
+            <label for="ingredients">Ingredients:</label>
+            <textarea name="instructions" cols="50" rows="5"><%=recipe.ingredients%></textarea>
+            <br>
+            <label for="cooking">How to Make:</label>
+            <textarea name="cooking" cols="50" rows="5"><%=recipe.cooking%></textarea>
+            <br>
+            <input type="submit" value="Edit Recipe"/>
+        </form>
+    </div>  
     
 </body>
 </html>

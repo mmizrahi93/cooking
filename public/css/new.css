@@ -4,3 +4,8 @@ body {
     flex-direction: column;
     text-align: center;
 }
+
+.container {
+    margin: 20px;
+    background-color: rgb(245, 166, 245);
+}

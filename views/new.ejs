@@ -12,24 +12,26 @@
     <nav>
         <a href="/recipe">Back to Recipe Posts</a>
     </nav>
-    <form action="/recipe/" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
-        <br>
-        <label for="inspiration">Inspiration:</label>
-        <input type="text" name="inspiration" id="inspiration">
-        <br>
-        <label for="img">Img:</label>
-        <input type="text" name="img" id="img">
-        <br>
-        <label for="ingredients">Ingredients:</label>
-        <textarea name="ingredients" id="ingredients" cols="45" rows="5"></textarea>
-        <br>
-        <label for="cooking">How to Make:</label>
-        <textarea name="cooking" id="cooking" cols="45" rows="5"></textarea>
-        <br>
-        <input type="submit" value="Create Post"/>
-    </form>
+    <div class="container">
+        <form action="/recipe/" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="inspiration">Inspiration:</label>
+            <input type="text" name="inspiration" id="inspiration">
+            <br>
+            <label for="img">Img:</label>
+            <input type="text" name="img" id="img">
+            <br>
+            <label for="ingredients">Ingredients:</label>
+            <textarea name="ingredients" id="ingredients" cols="45" rows="5"></textarea>
+            <br>
+            <label for="cooking">How to Make:</label>
+            <textarea name="cooking" id="cooking" cols="45" rows="5"></textarea>
+            <br>
+            <input type="submit" value="Create Post"/>
+        </form>
+    </div>
     
 </body>
 </html>
