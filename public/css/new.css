@@ -6,6 +6,10 @@ body {
     justify-content: center;
 }
 
+.header {
+    background-image: linear-gradient(rgb(245, 166, 245), rgb(225, 228, 230) );
+}
+
 .container {
     margin: 20px;
     background-color: rgb(245, 166, 245);
@@ -28,7 +32,7 @@ input, textarea {
 }
 
 .submit:hover {
-    background: rgb(3, 3, 156);
+    background: rgb(245, 166, 245);
     box-shadow: black 8px 0px 8px;
     border-radius: 10px;
 }
@@ -42,7 +46,7 @@ button {
 }
 
 button:hover {
-    background: rgb(3, 3, 156);
+    background: rgb(245, 166, 245);
     box-shadow: black 8px 0px 8px;
 }
 

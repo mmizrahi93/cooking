@@ -8,10 +8,12 @@
     <title>Show Page</title>
 </head>
 <body>
-    <h1><%= recipe.name %></h1>
-    <nav>
-        <button><a href="/recipe">Back to Recipe Posts</a></button>
-    </nav>
+    <div class="header">
+        <h1><%= recipe.name %></h1>
+        <nav>
+            <button><a href="/recipe">Back to Recipe Posts</a></button>
+        </nav>
+    </div>
     <br>
     <div class="container">
         Inspiration: <%=recipe.inspiration %>

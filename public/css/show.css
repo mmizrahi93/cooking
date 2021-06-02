@@ -10,6 +10,14 @@ img {
     box-shadow: black 8px 0px 8px;
 }
 
+.header {
+    background-image: linear-gradient(rgb(92, 92, 247), rgb(180, 226, 245));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .container {
     margin: 15px;
 }
