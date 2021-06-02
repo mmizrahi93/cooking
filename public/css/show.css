@@ -13,3 +13,24 @@ img {
 .container {
     margin: 15px;
 }
+
+button {
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: rgb(3, 3, 156);
+    box-shadow: black 8px 0px 8px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}

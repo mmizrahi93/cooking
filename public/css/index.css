@@ -10,6 +10,27 @@ img {
     margin: 10px;
 }
 
-img :hover {
+.header {
+    background-image: linear-gradient(red, rgb(241, 149, 149));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: skyblue;
     box-shadow: black 8px 0px 8px;
+}
+
+a {
+    color: black;
 }

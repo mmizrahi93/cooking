@@ -8,10 +8,12 @@
     <title>Recipe index</title>
 </head>
 <body>
-    <h1>Recipe Index</h1>
-    <nav>
-        <button><a href="/recipe/new">Create a new Recipe</a></button>
-    </nav>
+    <div class="header">
+        <h1>Welcome to Cookbook</h1>
+        <nav>
+            <button><a href="/recipe/new">Create a new Recipe</a></button>
+        </nav>
+    </div>
     <div class="container">
         <% for (let i = 0; i < recipe.length; i++) { %>
             <a href="/recipe/<%= recipe[i].id %>"><img src="<%= recipe[i].img %>" alt=""></a>
