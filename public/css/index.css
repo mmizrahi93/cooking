@@ -8,6 +8,7 @@ img {
     width: 800px;
     box-shadow: black 8px 0px 8px;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .header {
@@ -27,7 +28,7 @@ button {
 }
 
 button:hover {
-    background: skyblue;
+    background: rgb(240, 130, 130);
     box-shadow: black 8px 0px 8px;
 }
 
