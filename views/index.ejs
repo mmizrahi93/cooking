@@ -22,7 +22,7 @@
     <br>
     <div class="container">
         <% for (let i = 0; i < recipe.length; i++) { %>
-            <a href="/recipe/<%= recipe[i].id %>"><img src="<%= recipe[i].img %>" alt=""></a>
+            <a href="/recipe/<%= recipe[i].id %>"><img src="<%= recipe[i].img %>" alt="" style="max-width:100%;height:auto;"></a>
         <% } %>
     </div>
     

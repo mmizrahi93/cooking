@@ -8,12 +8,13 @@ body {
 
 .header {
     background-image: linear-gradient(rgb(245, 166, 245), rgb(225, 228, 230) );
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
     margin: 20px;
     background-color: rgb(245, 166, 245);
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -21,10 +22,12 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    left: 0;
+    right: 0;
 }
 
 input, textarea {
-    width: 450px;
+    width: 90%;
 }
 
 .submit {
