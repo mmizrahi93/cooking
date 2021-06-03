@@ -1,15 +1,26 @@
 body {
     background-color: rgb(241, 149, 149);
     text-align: center;
+    margin: 8px;
 }
 
-img {
-    height: 600px;
-    width: 800px;
+@media screen and (min-width:700px) {img {
+    min-height: 400px;
+    width: 600px;
     box-shadow: black 8px 0px 8px;
     margin: 10px;
     border-radius: 10px;
 }
+}
+
+img {
+    max-height: 275px;
+    min-width: 360px;
+    box-shadow: black 8px 0px 8px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
 
 .header {
     background-image: linear-gradient(red, rgb(241, 149, 149));
@@ -35,4 +46,9 @@ button:hover {
 
 a {
     color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }

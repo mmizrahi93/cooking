@@ -4,8 +4,7 @@ body {
 }
 
 img {
-    height: 600px;
-    width: 700px;
+    max-height: 275px;
     margin: 10px;
     box-shadow: black 8px 0px 8px;
     border-radius: 10px;
@@ -16,6 +15,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+    height: 150px;
     width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -43,4 +43,9 @@ a {
 
 a:hover {
     color: white;
+}
+
+.inspiration {
+    margin-top: 150px;
+    position: relative;
 }
