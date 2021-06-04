@@ -9,6 +9,7 @@ TECHNOLOGIES USED
 - javascript
 - express
 - mongoose
+- node.js
 
 UNSOLVED PROBLEMS
 
